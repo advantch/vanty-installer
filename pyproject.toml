@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vanty-installer"
+version = "0.0.5"
+description = "This is the installer for Advantch Vanty SaaS Starter."
+authors = ["Themba <themba@advantch.com>"]
+homepage="https://www/advantch/com"
+readme="README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+cookiecutter = "^1.7.2"
+PyYAML = "^5.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = [ "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vanty = "vanty_installer.__main__:main"
